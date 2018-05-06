@@ -1,0 +1,16 @@
+<div class="my-1 card">
+    <div class="card-body">
+        <a class="text-dark" href="<%- config.root %><%- item.path %>">
+            <h2 class="card-title">
+                <%- item.title || theme.default_post_title || "Untitled" %>
+            </h2>
+        </a>
+        <p class="card-text font-italic">
+            <!-- Date and Author -->
+            <% if(item.author) { %>
+            Posted by <%- item.author %> on
+            <% } %>
+            <%= item.date.format(config.date_format) %>
+        </p>
+    </div>
+</div>

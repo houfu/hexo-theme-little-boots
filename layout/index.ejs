@@ -1,0 +1,28 @@
+<!-- Page Header -->
+<header>
+    <div class="container-fluid bg-light banner" style="background-image: url('<%- theme.index_cover %>')">
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-8 col-md-10">
+                <div class="text-light">
+                    <h1 class="display-1 text-center text-capitalize"><%- config.title %></h1>
+                    <hr class="small">
+                    <h4 class="display-5 text-center font-italic"><%- config.subtitle %></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-lg-8 col-md-10 offset-md-1 mt-3">
+            <% page.posts.each(function(item){ %>
+                <%- partial('_partial/article-index', {item: item}) %>
+            <% }); %>
+
+            <%- partial('_partial/pagination') %>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,80 @@
+<hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <ul class="nav justify-content-center text-dark">
+                    <% if (theme.twitter_url) { %>
+                        <li class="nav-item mx-2">
+                            <a href="<%- theme.twitter_url%>" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    <% } %>
+
+                    <% if (theme.facebook_url) { %>
+                        <li class="nav-item mx-2">
+                            <a href="<%- theme.facebook_url%>" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    <% } %>
+
+                    <% if (theme.github_url) { %>
+                        <li class="nav-item mx-2">
+                            <a href="<%- theme.github_url%>" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    <% } %>
+
+                    <% if (theme.linkedin_url) { %>
+                        <li class="nav-item mx-2">
+                            <a href="<%- theme.linkedin_url%>" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    <% } %>
+
+                    <% if (theme.mailto) { %>
+                        <li class="nav-item mx-2">
+                            <a href="mailto:<%- theme.mailto%>" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-envelope-open fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    <% } %>
+
+                    <% if (theme.gitlab_url) { %>
+                        <li class="nav-item mx-2">
+                            <a href="<%- theme.gitlab_url%>" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    <% } %>
+                </ul>
+                <p class="text-muted mt-3">&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> |
+                Based on "Little Boots"</p>
+            </div>
+        </div>
+    </div>
+</footer>
