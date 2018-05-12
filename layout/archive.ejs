@@ -13,7 +13,7 @@
 <header class="bg-light banner" style="background-image: url('<%- url_for(theme.index_cover) %>')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1" s>
+            <div class="col-md-10 offset-md-1 mt-3" s>
                 <div class="p-3 my-5 text-dark" style="background: rgba(255, 255, 255, 0.9)">
                     <div class="display-1">
                         <h1><%- title %></h1>
@@ -26,8 +26,8 @@
 
 <!-- Main Content -->
 <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-10">
+    <div class="row justify-content-start">
+        <div class="col-md-10 offset-md-1">
             <% page.posts.each(function(item){ %>
                 <%- partial('_partial/article-archive', {item: item}) %>
             <% }); %>

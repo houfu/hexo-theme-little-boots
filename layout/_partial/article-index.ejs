@@ -12,14 +12,17 @@
         </a>
 
     </div>
-    <div class="card-footer text-muted font-italic">
+    <div class="card-footer">
+        <span class="text-muted font-italic">
             <!-- Date and Author -->
             <% if(item.author) { %>
             Posted by <%- item.author %> on
             <% } %>
             <%= item.date.format(config.date_format) %>
-        <div class="float-right">
-            <a class="text-dark card-link" href="<%- url_for(item.path) -%>">[Read More]</a>
-        </div>
+        </span>
+
+        <span class="float-right">
+            <a class="btn btn-primary" href="<%- url_for(item.path) -%>">Read More</a>
+        </span>
     </div>
 </div>
