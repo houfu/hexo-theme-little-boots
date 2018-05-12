@@ -24,7 +24,7 @@
         <p><%- theme.intro_text %></p>
         <% if(theme.intro_btn_link && theme.intro_btn_caption) { %>
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="<% url_for(theme.intro_btn_link) %>" role="button"> <% theme.intro_btn_caption%></a>
+            <a class="btn btn-primary btn-lg" href="<%- url_for(theme.intro_btn_link) %>" role="button"> <%- theme.intro_btn_caption%></a>
         </p>
         <% } %>
     </div>
