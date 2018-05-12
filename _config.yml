@@ -10,9 +10,11 @@ menu:
 menu_title:
 
 # Intro
-intro_title: Welcome!
-intro_lead:
-intro_text: Howdy
+intro_title:  #This is the title of the Jumbotron
+intro_lead:   #This is the text that appears under the title, which is larger than normal text
+intro_text:   #This appears below the title and lead, and appears like normal text.
+intro_btn_caption:  #This is the text that appears on the button under the intro_text.
+intro_btn_link:  #This is the link that activates when the button is clicked.
 
 # URL of the Home page image
 index_cover: flat-2833953_1280.jpg
