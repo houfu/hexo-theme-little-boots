@@ -1,14 +1,14 @@
 <!-- Page Header -->
 <!-- Set your background image for this header in your post front-matter: cover -->
 <%
-var cover = item.cover || '/' + theme.index_cover;
+var cover = item.cover || url_for(theme.index_cover);
 %>
 <header class="bg-dark banner" style="background-image: url('<%- cover %>')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
-                <div class="my-5 text-light">
-                    <h1 class="display-1"><%- item.title || theme.default_post_title || "Untitled" %></h1>
+            <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1" s>
+                <div class="p-3 my-5 text-dark" style="background: rgba(255, 255, 255, 0.9)">
+                    <h1 class="display-3"><%- item.title || theme.default_post_title || "Untitled" %></h1>
                     <% if (item.subtitle && item.subtitle.length) { %>
                     <h2 class="display-6">
                         <%- item.subtitle %>

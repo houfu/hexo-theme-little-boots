@@ -1,6 +1,6 @@
 <!-- Page Header -->
-<header>
-    <div class="container-fluid bg-light banner" style="background-image: url('<%- theme.index_cover %>')">
+<header class="bg-dark banner" style="background-image: url('<%- url_for(theme.index_cover) %>')">
+    <div class='container-fluid'>
         <div class="row justify-content-center py-5">
             <div class="col-lg-8 col-md-10">
                 <div class="text-light">
@@ -13,12 +13,28 @@
     </div>
 </header>
 
+
+<!-- Intro -->
+<div class="container">
+    <% if(theme.intro_title && (theme.intro_text || theme.intro_lead)) { %>
+    <div class="jumbotron">
+        <h1 class="display-4"><%- theme.intro_title %></h1>
+        <p class="lead"> <%- theme.intro_lead %></p>
+        <hr class="my-4">
+        <p><%- theme.intro_text %></p>
+    </div>
+    <% } %>
+</div>
+
+
+
 <!-- Main Content -->
 <div class="container">
     <div class="row justify-content-start">
-        <div class="col-lg-8 col-md-10 offset-md-1 mt-3">
+        <div class="col-md-10 offset-md-1 mt-3">
+
             <% page.posts.each(function(item){ %>
-                <%- partial('_partial/article-index', {item: item}) %>
+            <%- partial('_partial/article-index', {item: item}) %>
             <% }); %>
 
             <%- partial('_partial/pagination') %>

@@ -9,6 +9,11 @@ menu:
 # Title on top left of menu. Leave empty to use main blog title
 menu_title:
 
+# Intro
+intro_title: Welcome!
+intro_lead:
+intro_text: Howdy
+
 # URL of the Home page image
 index_cover: flat-2833953_1280.jpg
 
