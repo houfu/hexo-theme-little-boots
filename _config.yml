@@ -3,16 +3,20 @@ menu:
   Home: /
   Archives: /archives
   Github:
-    url: https://github.com/user
+    url: https://github.com/houfu
     icon: github
+  LinkedIn:
+    url: https://www.linkedin.com/in/hou-fu-ang-0a6851113/
+    icon: linkedin
+
 
 # Title on top left of menu. Leave empty to use main blog title
 menu_title:
 
 # Intro
-intro_title: Welcome!
+intro_title:
 intro_lead:
-intro_text: Howdy
+intro_text:
 
 # URL of the Home page image
 index_cover: flat-2833953_1280.jpg
@@ -23,7 +27,7 @@ default_post_title: Untitled
 # Comments. Choose one by filling up the information
 comments:
   # Disqus comments
-  disqus_shortname:
+  disqus_shortname: this-is-houfu
   # Facebook comments
   facebook:
     appid:
@@ -34,19 +38,19 @@ comments:
 google_analytics:
 
 # Addthis ID
-addthis:
+addthis: ra-5ae499595f194cac
 
 # set your own favicon
 favicon:
 
 # Social Accounts
-twitter_url: https://twitter.com/user
-twitter_handle:
+twitter_url: https://twitter.com/houfu
+twitter_handle: houfu
 facebook_url:
-github_url: https://github.com/user
+github_url: https://github.com/houfu
 gitlab_url:
-linkedin_url:
-mailto:
+linkedin_url: https://www.linkedin.com/in/hou-fu-ang-0a6851113/
+mailto: damon.houf@gmail.com
 
 # Node sass Config
 # see https://github.com/sass/node-sass
